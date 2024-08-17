@@ -1,10 +1,10 @@
 export default function WeatherWidget() {
   return (
     <div className="bg-green-200">
-      <div>City Name</div>
-      <div>I am weather image</div>
-      <div>I am weather short description.</div>
-      <div>Temp</div>
+      <div>Montevideo</div>
+      <div className="bg-pink-300">SUN IMAGE</div>
+      <div>Sunny</div>
+      <div>21 C</div>
       <div>Feels like TempFeeled</div>
     </div>
   );
