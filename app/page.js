@@ -1,11 +1,9 @@
-export default function WeatherWidget() {
+import WeatherWidget from "./components/WeatherWidget"
+
+export default function Page() {
   return (
     <div className="bg-green-200">
-      <div>Montevideo</div>
-      <div className="bg-pink-300">SUN IMAGE</div>
-      <div>Sunny</div>
-      <div>21 C</div>
-      <div>Feels like TempFeeled</div>
+      <WeatherWidget/>
     </div>
   );
 }

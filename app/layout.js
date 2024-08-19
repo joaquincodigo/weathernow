@@ -8,11 +8,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-gray-600">
-        <header className="bg-blue-300 flex justify-between"></header>
+      <body className="font-roboto">
         {children}
         <div className="bg-orange-200">
-          I am footer
+          <div>I am footer</div>
           <div>i am config icon </div>
         </div>
       </body>
