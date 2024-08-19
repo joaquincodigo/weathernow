@@ -1,9 +1,13 @@
-import WeatherWidget from "./components/WeatherWidget"
+import SettingsButton from "./components/SettingsButton";
+import WeatherWidget from "./components/WeatherWidget";
+import Settings from "./components/Settings";
 
 export default function Page() {
   return (
-    <div className="bg-green-200">
-      <WeatherWidget/>
+    <div>
+      <WeatherWidget />
+      <Settings />
+      <SettingsButton />
     </div>
   );
 }

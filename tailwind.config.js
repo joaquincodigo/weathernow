@@ -7,6 +7,9 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },
+       backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
     },
   },
 
