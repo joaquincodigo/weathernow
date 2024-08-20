@@ -8,12 +8,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-roboto bg-slate-100">
+      <body className="font-roboto antialiased">
         {children}
-        <div className="bg-orange-200">
-          <div>I am footer</div>
-          <div>i am config icon </div>
-        </div>
       </body>
     </html>
   );

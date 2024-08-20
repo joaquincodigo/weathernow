@@ -14,19 +14,23 @@ const WeatherWidget = () => {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
-    <div className="flex flex-col items-center bg-gradient-radial from-cyan-500 to-blue-500 text-white max-w-[350px] w-full rounded-lg">
-      <div className="w-full text-center mt-3 mb-10">{weatherData.cityName}</div>
+    <div className="flex flex-col items-center bg-gradient-radial from-cyan-500 to-blue-500 text-white max-w-[350px] w-full rounded-lg mx-auto my-auto py-5">
+      <div className="w-full text-center mb-10">
+        {weatherData.cityName}
+      </div>
       <img
         src={`http://openweathermap.org/img/wn/${weatherData.icon}.png`}
         alt="Weather Icon"
         className="w-[30%] aspect-w-1 aspect-h-1 object-cover"
       />
-      <div className="w-full text-center capitalize mb-3">{weatherData.weather}</div>
+      <div className="w-full text-center capitalize mb-3">
+        {weatherData.weather}
+      </div>
       <div className="w-full text-center text-4xl">
-        {weatherData.temperature} °C
+        {Math.round(weatherData.temperature)} °C
       </div>
       <div className="w-full text-center text-2xl mb-20">
-        Feels like {weatherData.feelsLike} °C
+        Feels like {Math.round(weatherData.feelsLike)} °C
       </div>
 
       <div className="flex justify-between items-center w-full px-4">
