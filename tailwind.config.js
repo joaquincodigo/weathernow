@@ -4,6 +4,9 @@ module.exports = {
 
   theme: {
     extend: {
+      screens: {
+        'xs': '425px' 
+      },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },

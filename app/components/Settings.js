@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Settings() {
   return (
-    <div className="flex flex-col max-w-[350px] mx-auto">
+    <div className="bg-green-300 flex flex-col min-h-[404px] max-w-[350px] mx-auto">
       <div className="text-center font-bold text-lg mb-5">Settings</div>
 
       <div className="text-center">

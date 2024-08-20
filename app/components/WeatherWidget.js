@@ -14,7 +14,7 @@ const WeatherWidget = () => {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
-    <div className="flex flex-col items-center bg-gradient-radial from-cyan-500 to-blue-500 text-white max-w-[350px] w-full rounded-lg mx-auto my-auto py-5">
+    <div className="w-full h-full flex flex-col items-center bg-gradient-radial from-cyan-500 to-blue-500 text-white">
       <div className="w-full text-center mb-10">
         {weatherData.cityName}
       </div>
