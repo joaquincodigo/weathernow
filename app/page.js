@@ -6,20 +6,20 @@ import Card from "./components/Card";
 import { useState } from "react";
 
 export default function Page() {
-  const [isSettingsOpen, setIsSettingsOpen] = useState(false)
-  let handleSettingsClick = () => {
-    setIsSettingsOpen(!isSettingsOpen)
-  }
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  
+  const handleSettingsClick = () => {
+    setIsSettingsOpen(!isSettingsOpen);
+  };
 
   return (
     <div>
-      {/* {isSettingsOpen ? <Settings /> : <WeatherWidget />}
+      <Card>
+        {isSettingsOpen ? <Settings /> : <WeatherWidget />}
+      </Card>
       <div className="flex justify-center mt-1.5">
         <SettingsButton handleSettingsClick={handleSettingsClick} />
-      </div> */}
-      <Card>
-        <WeatherWidget/>
-       </Card>
+      </div>
     </div>
   );
 }
