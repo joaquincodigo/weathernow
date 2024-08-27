@@ -7,8 +7,8 @@ export default function SettingsButton({handleSettingsClick}) {
       <Image
         src="images/settings_icon_black.svg"
         alt="Settings Icon"
-        width={30}
-        height={30}
+        width={40}
+        height={40}
       />
     </button>
   );

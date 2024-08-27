@@ -4,8 +4,8 @@ import React from "react";
 import useWeatherData from "../hooks/useWeatherData";
 
 const WeatherWidget = () => {
-  const lat = 44.34; // Replace with desired latitude
-  const lon = 10.99; // Replace with desired longitude
+  const lat = -34.86; // Replace with desired latitude
+  const lon = -56.16; // Replace with desired longitude
   const apiKey = "2b87b144063f738d6e1e2613bd72cf8f";
 
   const { weatherData, loading, error } = useWeatherData(lat, lon, apiKey);
@@ -14,7 +14,7 @@ const WeatherWidget = () => {
   if (error) return <div>Error: {error.message}</div>;
 
   return (
-    <div className="py-10 w-full h-full flex flex-col items-center bg-gradient-radial from-cyan-500 to-blue-600 text-white min-h-[568px]">
+    <div className="py-10 w-full h-full flex flex-col items-center bg-gradient-to-t to-dark-sky-blue from-dark-turquoise via-dark-turquoise-extended text-white">
 
       {/* CITI NAME */}
       <div className="w-full text-center mb-5 text-lg font-semibold">

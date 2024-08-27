@@ -13,11 +13,11 @@ export default function Page() {
   };
 
   return (
-    <div>
+    <div className="flex flex-col min-h-screen justify-center">
       <Card>
         {isSettingsOpen ? <Settings /> : <WeatherWidget />}
       </Card>
-      <div className="flex justify-center mt-1.5">
+      <div className="flex justify-center">
         <SettingsButton handleSettingsClick={handleSettingsClick} />
       </div>
     </div>

@@ -1,0 +1,4 @@
+turquesa oscuro 266e92
+celeste palido 5dadd5
+negro verde-azulado 081820
+blanco ffffff
