@@ -23,7 +23,7 @@ const WeatherWidget = () => {
 
       {/* IMAGE */}
       <img
-        src={`http://openweathermap.org/img/wn/${weatherData.icon}.png`}
+        src={weatherData.icon}
         alt="Weather Icon"
         className="w-[50%] aspect-w-1 aspect-h-1 object-cover"
       />

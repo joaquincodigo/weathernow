@@ -16,11 +16,14 @@ const useWeatherData = (lat, lon, apiKey) => {
         }
         const data = await response.json();
 
+        // Re-map the icon to your local high-res icons
+        const iconUrl = `/images/${data.weather[0].icon}.png`;
+
         setWeatherData({
           temperature: data.main.temp,
           feelsLike: data.main.feels_like,
           weather: data.weather[0].description,
-          icon: data.weather[0].icon,
+          icon: iconUrl,  // Use the re-mapped icon URL
           humidity: data.main.humidity,
           windSpeed: data.wind.speed,
           visibility: data.visibility,
